@@ -110,7 +110,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
             let scene = SCNScene(named: "art.scnassets/axe.dae")
             node = (scene?.rootNode.childNode(withName: "axe", recursively: true)!)!
             node.scale = SCNVector3(0.3,0.3,0.3)
-            node.name = "bathtub"
+            node.name = "axe"
         default:
             node = SCNNode()
         }
@@ -151,16 +151,16 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
             
             var node = SCNNode()
             
-            if (index > 9) && (index % 10 == 0) {
-                let scene = SCNScene(named: "art.scnassets/mouthshark.dae")
-                node = (scene?.rootNode.childNode(withName: "shark", recursively: true)!)!
-                node.scale = SCNVector3(0.3,0.3,0.3)
-                node.name = "shark"
-            }else{
-                let scene = SCNScene(named: "art.scnassets/bath.dae")
-                node = (scene?.rootNode.childNode(withName: "Cube_001", recursively: true)!)!
+            if (index < 50) {
+                let scene = SCNScene(named: "art.scnassets/spider.dae")
+                node = (scene?.rootNode.childNode(withName: "Cylinder", recursively: true)!)!
                 node.scale = SCNVector3(0.02,0.02,0.02)
-                node.name = "bath"
+                node.name = "spider"
+            }else{
+                let scene = SCNScene(named: "art.scnassets/cat.dae")
+                node = (scene?.rootNode.childNode(withName: "CatMac", recursively: true)!)!
+                node.scale = SCNVector3(1.2, 1.2, 1.2)
+                node.name = "cat"
             }
             
             node.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
@@ -190,10 +190,12 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         if contact.nodeA.physicsBody?.categoryBitMask == CollisionCategory.targetCategory.rawValue
             || contact.nodeB.physicsBody?.categoryBitMask == CollisionCategory.targetCategory.rawValue {
             
-            if (contact.nodeA.name! == "shark" || contact.nodeB.name! == "shark") {
-                score+=5
-            }else{
+            if (contact.nodeA.name! == "cat" && contact.nodeB.name! == "banana") {
                 score+=1
+            } else if (contact.nodeA.name! == "spider" && contact.nodeB.name! == "axe"){
+                score+=1
+            } else {
+                score-=1
             }
             
             DispatchQueue.main.async {
