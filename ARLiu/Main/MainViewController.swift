@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDelegate {
+class MainViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
@@ -104,12 +104,12 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
         case "banana":
             let scene = SCNScene(named: "art.scnassets/banana.dae")
             node = (scene?.rootNode.childNode(withName: "Cube_001", recursively: true)!)!
-            node.scale = SCNVector3(0.2,0.2,0.2)
+            node.scale = SCNVector3(0.15,0.15,0.15)
             node.name = "banana"
         case "axe":
             let scene = SCNScene(named: "art.scnassets/axe.dae")
             node = (scene?.rootNode.childNode(withName: "axe", recursively: true)!)!
-            node.scale = SCNVector3(0.3,0.3,0.3)
+            node.scale = SCNVector3(0.25,0.25,0.25)
             node.name = "axe"
         default:
             node = SCNNode()
@@ -152,14 +152,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContactDele
             var node = SCNNode()
             
             if (index < 50) {
-                let scene = SCNScene(named: "art.scnassets/spider.dae")
-                node = (scene?.rootNode.childNode(withName: "Cylinder", recursively: true)!)!
-                node.scale = SCNVector3(0.02,0.02,0.02)
+                let scene = SCNScene(named: "art.scnassets/mouthshark.dae")
+                node = (scene?.rootNode.childNode(withName: "shark", recursively: true)!)!
+                node.scale = SCNVector3(0.5,0.5,0.5)
                 node.name = "spider"
             }else{
-                let scene = SCNScene(named: "art.scnassets/cat.dae")
-                node = (scene?.rootNode.childNode(withName: "CatMac", recursively: true)!)!
-                node.scale = SCNVector3(1.2, 1.2, 1.2)
+                let scene = SCNScene(named: "art.scnassets/Golden_Fish_DAE.DAE")
+                node = (scene?.rootNode.childNode(withName: "Box01", recursively: true)!)!
+                node.scale = SCNVector3(0.012, 0.012, 0.012)
                 node.name = "cat"
             }
             
