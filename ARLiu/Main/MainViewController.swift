@@ -19,7 +19,7 @@ class MainViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContact
     
     var score = 0
     var player: AVAudioPlayer?
-    var seconds = 10
+    var seconds = 30
     var timer = Timer()
     var isTimerRunning = false
     
@@ -261,7 +261,7 @@ class MainViewController: UIViewController, ARSCNViewDelegate, SCNPhysicsContact
     
     func resetTimer(){
         timer.invalidate()
-        seconds = 10
+        seconds = 30
         timerlabel.text = "\(seconds)"
     }
     
