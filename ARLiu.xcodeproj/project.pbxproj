@@ -17,6 +17,16 @@
 		53773727226FDF92003DBCA3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53773726226FDF92003DBCA3 /* MainViewController.xib */; };
 		53773729226FE092003DBCA3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53773728226FE092003DBCA3 /* UIViewController.swift */; };
 		5377372B226FE0A5003DBCA3 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377372A226FE0A5003DBCA3 /* Optional.swift */; };
+		5377373222712E3D003DBCA3 /* watersplash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5377372D22712E3D003DBCA3 /* watersplash.wav */; };
+		5377373322712E3D003DBCA3 /* monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377372E22712E3D003DBCA3 /* monkey.mp3 */; };
+		5377373422712E3D003DBCA3 /* overtake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377372F22712E3D003DBCA3 /* overtake.mp3 */; };
+		5377373522712E3D003DBCA3 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5377373022712E3D003DBCA3 /* explosion.wav */; };
+		5377373622712E3D003DBCA3 /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377373122712E3D003DBCA3 /* rooster.mp3 */; };
+		5377373A2271338E003DBCA3 /* babyshark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 537737392271338E003DBCA3 /* babyshark.mp3 */; };
+		5377373C22713C9A003DBCA3 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377373B22713C9A003DBCA3 /* bomb.mp3 */; };
+		5377373E22713D1F003DBCA3 /* noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377373D22713D1F003DBCA3 /* noise.mp3 */; };
+		537737422271402C003DBCA3 /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 537737402271402C003DBCA3 /* Explode.scnp */; };
+		537737432271402C003DBCA3 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 537737412271402C003DBCA3 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		53773726226FDF92003DBCA3 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		53773728226FE092003DBCA3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5377372A226FE0A5003DBCA3 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		5377372D22712E3D003DBCA3 /* watersplash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = watersplash.wav; sourceTree = "<group>"; };
+		5377372E22712E3D003DBCA3 /* monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monkey.mp3; sourceTree = "<group>"; };
+		5377372F22712E3D003DBCA3 /* overtake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overtake.mp3; sourceTree = "<group>"; };
+		5377373022712E3D003DBCA3 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		5377373122712E3D003DBCA3 /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
+		537737392271338E003DBCA3 /* babyshark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = babyshark.mp3; sourceTree = "<group>"; };
+		5377373B22713C9A003DBCA3 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		5377373D22713D1F003DBCA3 /* noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = noise.mp3; sourceTree = "<group>"; };
+		537737402271402C003DBCA3 /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
+		537737412271402C003DBCA3 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,8 @@
 		34ED55BF225FCE50008A7F09 /* ARLiu */ = {
 			isa = PBXGroup;
 			children = (
+				5377373F22713FFA003DBCA3 /* Particles */,
+				5377372C22712C45003DBCA3 /* Sounds */,
 				53773725226FDF84003DBCA3 /* Main */,
 				53773720226FDEAA003DBCA3 /* Launch */,
 				34ED55C0225FCE50008A7F09 /* AppDelegate.swift */,
@@ -93,6 +115,30 @@
 				53773726226FDF92003DBCA3 /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5377372C22712C45003DBCA3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5377373022712E3D003DBCA3 /* explosion.wav */,
+				5377372E22712E3D003DBCA3 /* monkey.mp3 */,
+				5377372F22712E3D003DBCA3 /* overtake.mp3 */,
+				5377373B22713C9A003DBCA3 /* bomb.mp3 */,
+				5377373D22713D1F003DBCA3 /* noise.mp3 */,
+				5377373122712E3D003DBCA3 /* rooster.mp3 */,
+				537737392271338E003DBCA3 /* babyshark.mp3 */,
+				5377372D22712E3D003DBCA3 /* watersplash.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5377373F22713FFA003DBCA3 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				537737402271402C003DBCA3 /* Explode.scnp */,
+				537737412271402C003DBCA3 /* spark.png */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,11 +199,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5377373E22713D1F003DBCA3 /* noise.mp3 in Resources */,
+				5377373522712E3D003DBCA3 /* explosion.wav in Resources */,
 				34ED55C3225FCE50008A7F09 /* art.scnassets in Resources */,
+				5377373C22713C9A003DBCA3 /* bomb.mp3 in Resources */,
+				5377373A2271338E003DBCA3 /* babyshark.mp3 in Resources */,
+				537737422271402C003DBCA3 /* Explode.scnp in Resources */,
 				53773727226FDF92003DBCA3 /* MainViewController.xib in Resources */,
 				34ED55CD225FCE53008A7F09 /* LaunchScreen.storyboard in Resources */,
+				5377373422712E3D003DBCA3 /* overtake.mp3 in Resources */,
+				5377373222712E3D003DBCA3 /* watersplash.wav in Resources */,
+				537737432271402C003DBCA3 /* spark.png in Resources */,
 				53773724226FDEF7003DBCA3 /* LaunchViewController.xib in Resources */,
+				5377373622712E3D003DBCA3 /* rooster.mp3 in Resources */,
 				34ED55CA225FCE53008A7F09 /* Assets.xcassets in Resources */,
+				5377373322712E3D003DBCA3 /* monkey.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
